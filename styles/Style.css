@@ -1,0 +1,567 @@
+body {
+    background-color: #F3F5FC; /* Color de fondo suave para el cuerpo */
+    color: #333; /* Color de texto oscuro para mejorar la legibilidad */
+    font-family: Arial, sans-serif; /* Fuente predeterminada para el texto */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 20px; /* Agrega espacio interno alrededor del contenido */
+}
+
+/* Estilo para el contenedor principal */
+.contenedor {
+    max-width: 800px; /* Ancho máximo del contenedor para mantener el diseño centrado */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    position: relative; /* Permite el posicionamiento absoluto de los elementos hijos */
+}
+
+/* Estilo para los iconos */
+.icon {
+    width: 2000px; /* Ancho del icono (revisar si es necesario) */
+    height: 55px; /* Altura del icono */
+    position: absolute; /* Posiciona el icono de manera absoluta dentro del contenedor */
+    top: 5px; /* Distancia desde el borde superior */
+    right: 120px; /* Distancia desde el borde derecho */
+    border-radius: 32px; /* Bordes redondeados del icono */
+}
+
+/* Estilo para el contenedor de los textareas */
+.textareas {
+    display: flex; /* Utiliza flexbox para alinear los textareas en una fila */
+    justify-content: space-between; /* Espacio igual entre los textareas */
+    margin: 10px 0px; /* Margen superior e inferior */
+    border: 0; /* Sin borde */
+}
+
+/* Estilo para los elementos textarea */
+textarea {
+    width: 52%; /* Ancho del textarea */
+    padding: 20px; /* Espacio interno dentro del textarea */
+    font-size: 16px; /* Tamaño de la fuente */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho */
+    resize: none; /* Desactiva la redimensión del textarea */
+}
+
+/* Estilo específico para el textarea con id 'ingreso_texto' */
+#ingreso_texto {
+    border: none; /* Sin borde */
+    background-color: #F3F5FC; /* Color de fondo igual al del body */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    color: #0A3871; /* Color del texto */
+    outline: none; /* Sin contorno cuando está enfocado */
+}
+
+/* Estilo específico para el textarea con id 'salida_texto' */
+#salida_texto {
+    border: 1px solid #0A3871; /* Borde del textarea (añadido color para que sea visible) */
+    background-color: #FFFFFF; /* Color de fondo blanco */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    color: #0A3871; /* Color del texto */
+    outline: none; /* Sin contorno cuando está enfocado */
+}
+
+/* Estilo para el contenedor del texto de ingreso */
+.ingresotexto {
+    width: 970px; /* Ancho del contenedor del texto */
+    height: 500px; /* Altura del contenedor del texto */
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+    top: 80px; /* Posición desde el borde superior */
+    right: 120px; /* Posición desde el borde derecho */
+    border-radius: 32px; /* Bordes redondeados del contenedor */
+    font-size: 20px; /* Tamaño de la fuente */
+}
+
+/* Estilo para el contenedor del texto de salida */
+.salidatexto {
+    width: 400px; /* Ancho del contenedor del texto */
+    height: 620px; /* Altura del contenedor del texto */
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+    top: 80px; /* Posición desde el borde superior */
+    left: 700px; /* Posición desde el borde izquierdo */
+    border-radius: 32px; /* Bordes redondeados del contenedor */
+    font-size: 20px; /* Tamaño de la fuente */
+    border: 0; /* Sin borde */
+}
+
+/* Estilo para el icono 'chico_lupa' */
+.chico_lupa {
+    position: absolute; /* Posicionamiento absoluto del icono */
+    width: 200px; /* Ancho de la imagen */
+    height: 200px; /* Altura de la imagen */
+    left: 800px; /* Posición desde el borde izquierdo */
+    top: 230px; /* Posición desde el borde superior */
+    margin-bottom: 100px; /* Espacio debajo de la imagen */
+}
+
+/* Estilo para elementos ocultos */
+.hidden {
+    display: none; /* Oculta el elemento */
+}
+
+/* Estilo para el mensaje de 'ningún mensaje' */
+.tex_ningunmensaje {
+    font-size: 24px; /* Tamaño de la fuente */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 68%; /* Posición desde el borde superior */
+    left: 112%; /* Posición desde el borde izquierdo */
+    transform: translate(-50%, -50%); /* Centra el mensaje en su posición */
+    text-align: center; /* Alinea el texto al centro */
+    width: 90%; /* Ancho del contenedor del mensaje */
+    display: flex; /* Utiliza flexbox para alinear el mensaje */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Alinea horizontalmente los elementos */
+}
+
+/* Estilo para el mensaje de 'ingreso de texto' */
+.ingreso_texto {
+    font-size: 13px; /* Tamaño de la fuente */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 75%; /* Posición desde el borde superior */
+    left: 112%; /* Posición desde el borde izquierdo */
+    transform: translate(-50%, -50%); /* Centra el mensaje en su posición */
+    text-align: center; /* Alinea el texto al centro */
+    width: 90%; /* Ancho del contenedor del mensaje */
+    display: flex; /* Utiliza flexbox para alinear el mensaje */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Alinea horizontalmente los elementos */
+}
+
+/* Estilo para el contenedor de salida */
+.output-container {
+    position: relative; /* Posicionamiento relativo para elementos hijos */
+}
+
+/* Estilo para la disposición de los botones */
+.botones {
+    display: flex; /* Utiliza flexbox para alinear los botones en una fila */
+    justify-content: space-between; /* Distribuye el espacio entre los botones */
+    margin-top: 670px; /* Margen superior para los botones */
+}
+
+/* Estilo general para los botones */
+button {
+    width: 328px; /* Ancho del botón */
+    height: 67px; /* Altura del botón */
+    padding: 10px; /* Espacio interno del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 5px 1%; /* Margen alrededor del botón */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Muestra el cursor como mano cuando se pasa sobre el botón */
+    color: #0A3871; /* Color del texto del botón */
+    position: absolute; /* Posicionamiento absoluto para los botones */
+    font-size: 20px; /* Tamaño de la fuente (repetido, considera consolidar) */
+}
+
+/* Estilo específico para el botón 'encriptar_boton' */
+#encriptar_boton {
+    top: 600px; /* Posición desde el borde superior */
+    right: 700px; /* Posición desde el borde derecho */
+    background-color: #0A3871; /* Color de fondo del botón */
+    color: #e7eaf6; /* Color del texto del botón */
+}
+
+/* Estilo específico para el botón 'desencriptarboton' */
+#desencriptarboton {
+    background-color: #e7eaf6; /* Color de fondo del botón */
+    top: 600px; /* Posición desde el borde superior */
+    left: 100px; /* Posición desde el borde izquierdo */
+    border: 2px solid #0A3871; /* Color y grosor del borde del botón */
+}
+
+/* Estilo específico para el botón 'copiar_boton' */
+#copiar_boton {
+    position: absolute; /* Posicionamiento absoluto para el botón */
+    top: 600px; /* Posición desde el borde superior */
+    left: 730px; /* Posición desde el borde izquierdo */
+    padding: 5px 10px; /* Espacio interno del botón */
+    font-size: 14px; /* Tamaño de la fuente */
+    background-color: #e7eaf6; /* Color de fondo del botón */
+    color: #0A3871; /* Color del texto del botón */
+    border: 2px solid #0A3871; /* Color y grosor del borde del botón */
+    border-radius: 25px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Muestra el cursor como mano cuando se pasa sobre el botón */
+    font-size: 20px; /* Tamaño de la fuente (repetido, considera consolidar) */
+}
+
+/* Estilo para los placeholders en todos los navegadores */
+textarea::placeholder {
+    font-size: 20px; /* Tamaño de la fuente para los placeholders */
+}
+
+/* Estilo para los placeholders en navegadores basados en Webkit */
+textarea::-webkit-input-placeholder {
+    font-size: 20px; /* Tamaño de la fuente para los placeholders en Webkit */
+}
+
+/* Estilo para los placeholders en Firefox */
+textarea:-moz-placeholder {
+    font-size: 20px; /* Tamaño de la fuente para los placeholders en Firefox */
+}
+
+/* Estilo para los placeholders en Edge */
+textarea::-ms-input-placeholder {
+    font-size: 20px; /* Tamaño de la fuente para los placeholders en Edge */
+}
+
+
+/* Media Query para dispositivos con un ancho máximo de 768px (tabletas) */
+@media (max-width: 768px) {
+
+    /* Estilo general para el cuerpo del documento en tabletas */
+    body {
+        background-color: #F3F5FC; /* Color de fondo */
+        color: #333; /* Color del texto */
+        font-family: Arial, sans-serif; /* Fuente */
+        margin: 0; /* Elimina el margen por defecto */
+        padding: 20px; /* Espacio interno */
+    }
+    
+    /* Estilo para el contenedor principal en tabletas */
+    .container {
+        max-width: 800px; /* Ancho máximo del contenedor */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        position: relative; /* Posicionamiento relativo para elementos hijos */
+    }
+    
+    /* Estilo para los iconos en tabletas */
+    .icon {
+        width: 200px; /* Ancho del icono */
+        height: 55px; /* Altura del icono */
+        position: absolute; /* Posicionamiento absoluto del icono */
+        top: 5px; /* Distancia desde el borde superior */
+        left: 5px; /* Distancia desde el borde izquierdo */
+        border-radius: 32px; /* Bordes redondeados */
+    }
+    
+    /* Estilo para el contenedor de los textareas en tabletas */
+    .textareas {
+        display: flex; /* Utiliza flexbox para alinear los textareas */
+        justify-content: space-between; /* Espacio igual entre los textareas */
+        margin: 10px 0; /* Margen superior e inferior */
+    }
+    
+    /* Estilo para los elementos textarea en tabletas */
+    textarea {
+        width: 52%; /* Ancho del textarea */
+        padding: 20px; /* Espacio interno */
+        font-size: 16px; /* Tamaño de la fuente */
+        line-height: 1.5; /* Altura de línea */
+        box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho */
+        resize: none; /* Desactiva la redimensión del textarea */
+        border: none; /* Sin borde */
+    }
+    
+    /* Estilo específico para el textarea con id 'ingreso_texto' */
+    #ingreso_texto {
+        border: none; /* Sin borde */
+        background-color: #F3F5FC; /* Color de fondo */
+        font-family: Arial, sans-serif; /* Fuente del texto */
+        color: #0A3871; /* Color del texto */
+    }
+    
+    /* Estilo específico para el textarea con id 'salida_texto' */
+    #salida_texto {
+        border: none; /* Sin borde */
+        background-color: #FFFFFF; /* Color de fondo */
+        font-family: Arial, sans-serif; /* Fuente del texto */
+        color: #0A3871; /* Color del texto */
+    }
+    
+    /* Estilo para el icono 'chico_lupa' en tabletas */
+    .chico_lupa {
+        position: absolute; /* Posicionamiento absoluto del icono */
+        width: 150px; /* Ancho del icono */
+        height: 150px; /* Altura del icono */
+        left: 450px; /* Distancia desde el borde izquierdo */
+        top: 300px; /* Distancia desde el borde superior */
+        margin-bottom: 10px; /* Espacio debajo del icono */
+    }
+    
+    /* Estilo para el mensaje de 'ningún mensaje' en tabletas */
+    .tex_ningunmensaje {
+        position: absolute; /* Posicionamiento absoluto */
+        width: 150px; /* Ancho del contenedor del mensaje */
+        height: 150px; /* Altura del contenedor del mensaje */
+        left: 250px; /* Distancia desde el borde izquierdo */
+        top: 325px; /* Distancia desde el borde superior */
+        margin-bottom: 10px; /* Espacio debajo del mensaje */
+    }
+
+    /* Estilo para el mensaje de 'ingreso de texto' en tabletas */
+    .ingreso_texto {
+        position: absolute; /* Posicionamiento absoluto */
+        width: 150px; /* Ancho del contenedor del mensaje */
+        height: 150px; /* Altura del contenedor del mensaje */
+        left: 250px; /* Distancia desde el borde izquierdo */
+        top: 400px; /* Distancia desde el borde superior */
+        margin-bottom: 10px; /* Espacio debajo del mensaje */
+    }
+
+    /* Estilo para los elementos ocultos en tabletas */
+    .hidden {
+        display: none; /* Oculta el elemento */
+    }
+    
+    /* Estilo para el mensaje de 'sin mensaje' */
+    .no-message {
+        font-size: 24px; /* Tamaño de la fuente */
+        position: absolute; /* Posicionamiento absoluto */
+        top: 68%; /* Posición desde el borde superior */
+        left: 112%; /* Posición desde el borde izquierdo */
+        transform: translate(-50%, -50%); /* Centra el mensaje en su posición */
+        text-align: center; /* Alinea el texto al centro */
+        width: 90%; /* Ancho del contenedor del mensaje */
+        display: flex; /* Utiliza flexbox para alinear el mensaje */
+        align-items: center; /* Alinea verticalmente los elementos */
+        justify-content: center; /* Alinea horizontalmente los elementos */
+    }
+    
+    /* Estilo para el mensaje de 'ingreso de texto' */
+    .enter-text {
+        font-size: 13px; /* Tamaño de la fuente */
+        position: absolute; /* Posicionamiento absoluto */
+        top: 75%; /* Posición desde el borde superior */
+        left: 112%; /* Posición desde el borde izquierdo */
+        transform: translate(-50%, -50%); /* Centra el mensaje en su posición */
+        text-align: center; /* Alinea el texto al centro */
+        width: 90%; /* Ancho del contenedor del mensaje */
+        display: flex; /* Utiliza flexbox para alinear el mensaje */
+        align-items: center; /* Alinea verticalmente los elementos */
+        justify-content: center; /* Alinea horizontalmente los elementos */
+    }
+    
+    /* Estilo para el contenedor de salida */
+    .output-container {
+        position: relative; /* Posicionamiento relativo para elementos hijos */
+    }
+    
+    /* Estilo para la disposición de los botones en tabletas */
+    .buttons {
+        display: flex; /* Utiliza flexbox para alinear los botones en una columna */
+        flex-direction: column; /* Distribuye los botones en una columna */
+        justify-content: center; /* Centra los botones verticalmente */
+        align-items: center; /* Centra los botones horizontalmente */
+        margin-top: 670px; /* Margen superior para los botones */
+    }
+    
+    /* Estilo general para los botones en tabletas */
+    button {
+        width: 328px; /* Ancho del botón */
+        height: 67px; /* Altura del botón */
+        padding: 10px; /* Espacio interno del botón */
+        font-size: 16px; /* Tamaño de la fuente */
+        margin: 5px 0; /* Margen superior e inferior */
+        border: none; /* Sin borde */
+        border-radius: 25px; /* Bordes redondeados */
+        cursor: pointer; /* Muestra el cursor como mano cuando se pasa sobre el botón */
+        color: #0A3871; /* Color del texto del botón */
+        font-size: 20px; /* Tamaño de la fuente (repetido, considera consolidar) */
+    }
+    
+    /* Estilo específico para el botón 'encriptar_boton' */
+    #encriptar_boton {
+        background-color: #0A3871; /* Color de fondo */
+        color: #e7eaf6; /* Color del texto */
+    }
+    
+    /* Estilo específico para el botón 'desencriptarboton' */
+    #desencriptarboton {
+        background-color: #e7eaf6; /* Color de fondo */
+        border: 2px solid #0A3871; /* Color y grosor del borde */
+    }
+    
+    /* Estilo específico para el botón 'copiar_boton' */
+    #copiar_boton {
+        background-color: #e7eaf6; /* Color de fondo */
+        color: #0A3871; /* Color del texto */
+        border: 2px solid #0A3871; /* Color y grosor del borde */
+    }
+    
+    /* Cambia el tamaño de la fuente de los placeholders en todos los navegadores */
+    textarea::placeholder {
+        font-size: 20px; /* Tamaño de la fuente para los placeholders */
+    }
+    
+    /* Cambia el tamaño de la fuente de los placeholders en navegadores basados en Webkit */
+    textarea::-webkit-input-placeholder {
+        font-size: 20px; /* Tamaño de la fuente para los placeholders en Webkit */
+    }
+    
+    /* Cambia el tamaño de la fuente de los placeholders en Firefox */
+    textarea:-moz-placeholder {
+        font-size: 20px; /* Tamaño de la fuente para los placeholders en Firefox */
+    }
+    
+    /* Cambia el tamaño de la fuente de los placeholders en Edge */
+    textarea::-ms-input-placeholder {
+        font-size: 20px; /* Tamaño de la fuente para los placeholders en Edge */
+    }
+    
+    /* Ajustes adicionales para tabletas */
+    .container {
+        padding: 10px; /* Espacio interno del contenedor */
+    }
+    
+    /* Ajusta la disposición de los textareas en tabletas */
+    .textareas {
+        flex-direction: column; /* Distribuye los textareas en una columna */
+        margin: 0; /* Elimina el margen */
+    }
+    
+    /* Ajusta el estilo del textarea 'ingreso_texto' */
+    #ingreso_texto {
+        width: 100%; /* Ancho completo del contenedor */
+        height: 200px; /* Altura del textarea */
+        position: static; /* Posicionamiento estático para adaptarse al nuevo diseño */
+        margin-bottom: 10px; /* Espacio debajo del textarea */
+        background-color: #F3F5FC; /* Color de fondo */
+        text-transform: lowercase; /* Transforma el texto a minúsculas */
+    }
+    
+    /* Ajusta el estilo del textarea 'salida_texto' */
+    #salida_texto {
+        width: 100%; /* Ancho completo del contenedor */
+        height: 200px; /* Altura del textarea */
+        position: static; /* Posicionamiento estático para adaptarse al nuevo diseño */
+        margin-top: 10px; /* Espacio encima del textarea */
+    }
+    
+    /* Ajusta el tamaño y posición del icono en tabletas */
+    .icon {
+        position: static; /* Cambia a posición estática para el nuevo diseño */
+        width: 20px; /* Ancho del icono */
+        height: auto; /* Altura automática */
+        margin-bottom: 10px; /* Espacio debajo del icono */
+    }
+    
+    /* Ajusta el tamaño y posición del icono 'chico_lupa' */
+    .chico_lupa {
+        width: 180px; /* Ancho del icono */
+        left: 300px; /* Posición desde el borde izquierdo */
+        top: 290px; /* Posición desde el borde superior */
+    }
+    
+    /* Ajusta la disposición de los botones */
+    .botones {
+        position: static; /* Cambia a posición estática para adaptarse al nuevo diseño */
+        margin-top: 20px; /* Agrega espacio encima de los botones */
+    }
+    
+    /* Estilo específico para el botón 'encriptar_boton' */
+    #encriptar_boton {
+        background-color: #0A3871; /* Color de fondo */
+        color: #e7eaf6; /* Color del texto */
+        border: 2px solid #0A3871; /* Color y grosor del borde */
+        left: 5px; /* Posición desde el borde izquierdo */
+        top: 580px; /* Posición desde el borde superior */
+    }
+    
+    /* Estilo específico para el botón 'desencriptarboton' */
+    #desencriptarboton {
+        background-color: #e7eaf6; /* Color de fondo */
+        border: 2px solid #0A3871; /* Color y grosor del borde */
+        top: 500px; /* Posición desde el borde superior */
+        left: 5px; /* Posición desde el borde izquierdo */
+    }
+    
+    /* Estilo específico para el botón 'copiar_boton' */
+    #copiar_boton {
+        background-color: #e7eaf6; /* Color de fondo */
+        color: #0A3871; /* Color del texto */
+        border: 2px solid #0A3871; /* Color y grosor del borde */
+        width: 320px; /* Ancho del botón */
+        padding: 71px; /* Espacio interno del botón */
+        left: 350px; /* Posición desde el borde izquierdo */
+        top: 500px; /* Posición desde el borde superior */
+    }
+}
+
+/* Media Query para dispositivos con un ancho máximo de 680px (móviles) */
+@media (max-width: 680px) {
+    
+    /* Ajusta el padding del contenedor */
+    .container {
+        padding: 10px; /* Espacio interno del contenedor */
+    }
+    
+    /* Disposición de los textareas en una columna */
+    .textareas {
+        flex-direction: column; /* Coloca los textareas en una columna */
+        margin: 0; /* Elimina el margen */
+    }
+
+    /* Estilo del textarea de entrada */
+    #ingreso_texto {
+        width: 100%; /* Ancho completo del contenedor */
+        height: 200px; /* Altura del textarea */
+        position: static; /* Posicionamiento estático */
+        margin-bottom: 10px; /* Espacio debajo del textarea */
+        background-color: #F3F5FC; /* Color de fondo */
+    }
+
+    /* Estilo del textarea de salida */
+    #salida_texto {
+        width: 100%; /* Ancho completo del contenedor */
+        height: 200px; /* Altura del textarea */
+        position: static; /* Posicionamiento estático */
+        margin-top: 10px; /* Espacio encima del textarea */
+    }
+
+    /* Estilo general para los iconos */
+    .icon {
+        position: static; /* Posicionamiento estático */
+        width: 20px; /* Ancho del icono */
+        height: auto; /* Altura automática */
+        margin-bottom: 10px; /* Espacio debajo del icono */
+    }
+
+    /* Estilo específico para el icono 'chico_lupa' */
+    .chico_lupa {
+        width: 180px; /* Ancho del icono */
+        left: 250px; /* Posición desde el borde izquierdo */
+        top: 290px; /* Posición desde el borde superior */
+    }
+
+    /* Estilo para el mensaje de 'ningún mensaje' */
+    .tex_ningunmensaje {
+        left: 180px; /* Posición desde el borde izquierdo */
+    }
+
+    /* Estilo para el mensaje de 'ingreso de texto' */
+    .ingreso_texto {
+        left: 180px; /* Posición desde el borde izquierdo */
+    }
+
+    /* Estilo para el botón 'encriptar_boton' */
+    #encriptar_boton {
+        background-color: #0A3871; /* Color de fondo */
+        color: #e7eaf6; /* Color del texto */
+        border: 2px solid #0A3871; /* Color y grosor del borde */
+        width: 250px; /* Ancho del botón */
+        top: 580px; /* Posición desde el borde superior */
+    }
+    
+    /* Estilo para el botón 'desencriptarboton' */
+    #desencriptarboton {
+        background-color: #e7eaf6; /* Color de fondo */
+        border: 2px solid #0A3871; /* Color y grosor del borde */
+        top: 500px; /* Posición desde el borde superior */
+        left: 2.5px; /* Posición desde el borde izquierdo */
+        width: 250px; /* Ancho del botón */
+    }
+    
+    /* Estilo para el botón 'copiar_boton' */
+    #copiar_boton {
+        background-color: #e7eaf6; /* Color de fondo */
+        color: #0A3871; /* Color del texto */
+        border: 2px solid #0A3871; /* Color y grosor del borde */
+        width: 198px; /* Ancho del botón */
+        left: 260px; /* Posición desde el borde izquierdo */
+        top: 500px; /* Posición desde el borde superior */
+    }
+
+}
+
+
+
+
