@@ -518,18 +518,18 @@ textarea::-ms-input-placeholder {
     /* Estilo específico para el icono 'chico_lupa' */
     .chico_lupa {
         width: 180px; /* Ancho del icono */
-        left: 250px; /* Posición desde el borde izquierdo */
+        left: 180px; /* Posición desde el borde izquierdo */
         top: 290px; /* Posición desde el borde superior */
     }
 
     /* Estilo para el mensaje de 'ningún mensaje' */
     .tex_ningunmensaje {
-        left: 180px; /* Posición desde el borde izquierdo */
+        left: 120px; /* Posición desde el borde izquierdo */
     }
 
     /* Estilo para el mensaje de 'ingreso de texto' */
     .ingreso_texto {
-        left: 180px; /* Posición desde el borde izquierdo */
+        left: 120px; /* Posición desde el borde izquierdo */
     }
 
     /* Estilo para el botón 'encriptar_boton' */
