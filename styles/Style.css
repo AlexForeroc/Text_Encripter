@@ -293,7 +293,7 @@ textarea::-ms-input-placeholder {
         width: 150px; /* Ancho del contenedor del mensaje */
         height: 150px; /* Altura del contenedor del mensaje */
         left: 100px; /* Distancia desde el borde izquierdo */
-        top: 400px; /* Distancia desde el borde superior */
+        top: 420px; /* Distancia desde el borde superior */
         margin-bottom: 10px; /* Espacio debajo del mensaje */
     }
 
