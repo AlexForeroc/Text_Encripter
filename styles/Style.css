@@ -273,7 +273,7 @@ textarea::-ms-input-placeholder {
         width: 150px; /* Ancho del icono */
         height: 150px; /* Altura del icono */
         left: 450px; /* Distancia desde el borde izquierdo */
-        top: 300px; /* Distancia desde el borde superior */
+        top: 270px; /* Distancia desde el borde superior */
         margin-bottom: 10px; /* Espacio debajo del icono */
     }
     
