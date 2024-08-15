@@ -204,10 +204,10 @@ textarea::-ms-input-placeholder {
 }
 
 
-/* Media Query para dispositivos con un ancho máximo de 768px (tabletas) */
+/* Media Query para dispositivos con un ancho máximo de 680px (movil) */
 @media (max-width: 680px) {
 
-    /* Estilo general para el cuerpo del documento en tabletas */
+    /* Estilo general para el cuerpo del documento en movil */
     body {
         background-color: #F3F5FC; /* Color de fondo */
         color: #333; /* Color del texto */
@@ -216,14 +216,14 @@ textarea::-ms-input-placeholder {
         padding: 20px; /* Espacio interno */
     }
     
-    /* Estilo para el contenedor principal en tabletas */
+    /* Estilo para el contenedor principal en movil */
     .container {
         max-width: 800px; /* Ancho máximo del contenedor */
         margin: 0 auto; /* Centra el contenedor horizontalmente */
         position: relative; /* Posicionamiento relativo para elementos hijos */
     }
     
-    /* Estilo para los iconos en tabletas */
+    /* Estilo para los iconos en movil */
     .icon {
         width: 200px; /* Ancho del icono */
         height: 55px; /* Altura del icono */
@@ -233,14 +233,14 @@ textarea::-ms-input-placeholder {
         border-radius: 32px; /* Bordes redondeados */
     }
     
-    /* Estilo para el contenedor de los textareas en tabletas */
+    /* Estilo para el contenedor de los textareas en movil */
     .textareas {
         display: flex; /* Utiliza flexbox para alinear los textareas */
         justify-content: space-between; /* Espacio igual entre los textareas */
         margin: 10px 0; /* Margen superior e inferior */
     }
     
-    /* Estilo para los elementos textarea en tabletas */
+    /* Estilo para los elementos textarea en movil */
     textarea {
         width: 52%; /* Ancho del textarea */
         padding: 20px; /* Espacio interno */
@@ -267,7 +267,7 @@ textarea::-ms-input-placeholder {
         color: #0A3871; /* Color del texto */
     }
     
-    /* Estilo para el icono 'chico_lupa' en tabletas */
+    /* Estilo para el icono 'chico_lupa' en movil */
     .chico_lupa {
         position: absolute; /* Posicionamiento absoluto del icono */
         width: 150px; /* Ancho del icono */
@@ -277,7 +277,7 @@ textarea::-ms-input-placeholder {
         margin-bottom: 10px; /* Espacio debajo del icono */
     }
     
-    /* Estilo para el mensaje de 'ningún mensaje' en tabletas */
+    /* Estilo para el mensaje de 'ningún mensaje' en movil */
     .tex_ningunmensaje {
         position: absolute; /* Posicionamiento absoluto */
         width: 150px; /* Ancho del contenedor del mensaje */
@@ -287,17 +287,17 @@ textarea::-ms-input-placeholder {
         margin-bottom: 10px; /* Espacio debajo del mensaje */
     }
 
-    /* Estilo para el mensaje de 'ingreso de texto' en tabletas */
+    /* Estilo para el mensaje de 'ingreso de texto' en movil */
     .ingreso_texto {
         position: absolute; /* Posicionamiento absoluto */
         width: 150px; /* Ancho del contenedor del mensaje */
         height: 150px; /* Altura del contenedor del mensaje */
         left: 100px; /* Distancia desde el borde izquierdo */
-        top: 430px; /* Distancia desde el borde superior */
+        top: 410px; /* Distancia desde el borde superior */
         margin-bottom: 10px; /* Espacio debajo del mensaje */
     }
 
-    /* Estilo para los elementos ocultos en tabletas */
+    /* Estilo para los elementos ocultos en movil */
     .hidden {
         display: none; /* Oculta el elemento */
     }
@@ -335,7 +335,7 @@ textarea::-ms-input-placeholder {
         position: relative; /* Posicionamiento relativo para elementos hijos */
     }
     
-    /* Estilo para la disposición de los botones en tabletas */
+    /* Estilo para la disposición de los botones en movil */
     .buttons {
         display: flex; /* Utiliza flexbox para alinear los botones en una columna */
         flex-direction: column; /* Distribuye los botones en una columna */
