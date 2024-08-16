@@ -202,7 +202,155 @@ textarea:-moz-placeholder {
 textarea::-ms-input-placeholder {
     font-size: 20px; /* Tamaño de la fuente para los placeholders en Edge */
 }
+/*-------------------------------*/
 
+/* Media Query para dispositivos con un ancho máximo de 680px (tablet) */
+@media (max-width: 800px) {
+
+    /* Estilo general para el cuerpo del documento en movil */
+    body {
+        background-color: #F3F5FC; /* Color de fondo */
+        color: #333; /* Color del texto */
+        font-family: Arial, sans-serif; /* Fuente */
+        margin: 0; /* Elimina el margen por defecto */
+        padding: 20px; /* Espacio interno */
+    }  
+
+    /* Estilo para el contenedor principal en  tablet */
+    .container {
+        max-width: 800px; /* Ancho máximo del contenedor */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        position: relative; /* Posicionamiento relativo para elementos hijos */
+    }
+
+    /* Estilo para los iconos en tablet */
+    .icon {
+        width: 200px; /* Ancho del icono */
+        height: 55px; /* Altura del icono */
+        position: absolute; /* Posicionamiento absoluto del icono */
+        top: 5px; /* Distancia desde el borde superior */
+        left: 5px; /* Distancia desde el borde izquierdo */
+        border-radius: 32px; /* Bordes redondeados */
+    }
+
+    /* Estilo para el contenedor de los textareas en movil */
+    .textareas {
+        display: flex; /* Utiliza flexbox para alinear los textareas */
+        justify-content: space-between; /* Espacio igual entre los textareas */
+        margin: 10px 0; /* Margen superior e inferior */
+        
+    }
+    /* Estilo para el mensaje de 'ningún mensaje' en movil */
+    .tex_ningunmensaje {
+        position: absolute; /* Posicionamiento absoluto */
+        width: 150px; /* Ancho del contenedor del mensaje */
+        height: 150px; /* Altura del contenedor del mensaje */
+        left: 180px; /* Distancia desde el borde izquierdo */
+        top: 350px; /* Distancia desde el borde superior */
+        margin-bottom: 10px; /* Espacio debajo del mensaje */
+    }
+
+    /* Estilo para el mensaje de 'ingreso de texto' en movil */
+    .ingreso_texto {
+        position: absolute; /* Posicionamiento absoluto */
+        width: 150px; /* Ancho del contenedor del mensaje */
+        height: 150px; /* Altura del contenedor del mensaje */
+        left: 180px; /* Distancia desde el borde izquierdo */
+        top: 430px; /* Distancia desde el borde superior */
+        margin-bottom: 10px; /* Espacio debajo del mensaje */
+    }
+
+   /* Estilo para el icono 'chico_lupa' en movil */
+  
+   .chico_lupa {
+        position: absolute; /* Posicionamiento absoluto del icono */
+        width: 150px; /* Ancho del icono */
+        height: 150px; /* Altura del icono */
+        left: 300px; /* Distancia desde el borde izquierdo */
+        top: 320px; /* Distancia desde el borde superior */
+        margin-bottom: 10px; /* Espacio debajo del icono */
+    }
+
+    /* Estilo para el contenedor de los textareas en movil */
+    .textareas {
+        display: flex; /* Utiliza flexbox para alinear los textareas */
+        justify-content: space-between; /* Espacio igual entre los textareas */
+        margin: 10px 0; /* Margen superior e inferior */
+        
+    }
+    
+    /* Estilo para los elementos textarea en movil */
+    textarea {
+        width: 52%; /* Ancho del textarea */
+        padding: 20px; /* Espacio interno */
+        font-size: 16px; /* Tamaño de la fuente */
+        line-height: 1.5; /* Altura de línea */
+        box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho */
+        resize: none; /* Desactiva la redimensión del textarea */
+        border: none; /* Sin borde */
+    }
+    
+    /* Estilo específico para el textarea con id 'ingreso_texto' */
+    #ingreso_texto {
+        border: none; /* Sin borde */
+        background-color: #F3F5FC; /* Color de fondo */
+        font-family: Arial, sans-serif; /* Fuente del texto */
+        color: #0A3871; /* Color del texto */
+        left: 20px; /* Distancia desde el borde izquierdo */
+        width: 95%; /* Ancho del icono */
+        height: 200px; /* Altura del icono */
+    }
+    
+    /* Estilo específico para el textarea con id 'salida_texto' */
+    #salida_texto {
+        border: none; /* Sin borde */
+        background-color: #FFFFFF; /* Color de fondo */
+        font-family: Arial, sans-serif; /* Fuente del texto */
+        color: #0A3871; /* Color del texto */
+        left: 20px; /* Distancia desde el borde izquierdo */
+        width: 95%; /* Ancho del icono */
+        height: 200px; /* Altura del icono */
+        top: 290px; /* Distancia desde el borde superior */
+    }
+
+    /* Ajusta la disposición de los botones */
+    .botones {
+        position: static; /* Cambia a posición estática para adaptarse al nuevo diseño */
+        margin-top: 20px; /* Agrega espacio encima de los botones */
+    }
+    
+    /* Estilo específico para el botón 'encriptar_boton' */
+    #encriptar_boton {
+        background-color: #0A3871; /* Color de fondo */
+        color: #e7eaf6; /* Color del texto */
+        border: 2px solid #0A3871; /* Color y grosor del borde */
+        left: 5px; /* Posición desde el borde izquierdo */
+        top: 580px; /* Posición desde el borde superior */
+    }
+    
+    /* Estilo específico para el botón 'desencriptarboton' */
+    #desencriptarboton {
+        background-color: #e7eaf6; /* Color de fondo */
+        border: 2px solid #0A3871; /* Color y grosor del borde */
+        top: 500px; /* Posición desde el borde superior */
+        left: 5px; /* Posición desde el borde izquierdo */
+    }
+    
+    /* Estilo específico para el botón 'copiar_boton' */
+    #copiar_boton {
+        background-color: #e7eaf6; /* Color de fondo del botón */
+        border: 2px solid #0A3871; /* Color y grosor del borde del botón */
+        width: 280px; /* Ancho del botón */
+        padding: 7px; /* Espacio interno del botón */
+        left: 350px; /* Posición desde el borde izquierdo */
+        top: 500px; /* Posición desde el borde superior */
+        height: 148px; /*Alto del boton*/
+    }
+
+
+}
+
+/*-------------------------------*/
 
 /* Media Query para dispositivos con un ancho máximo de 680px (movil) */
 @media (max-width: 680px) {
