@@ -52,7 +52,13 @@ function encryptText(text) {
         'i': 'imes',
         'a': 'ai',
         'o': 'ober',
-        'u': 'ufat'
+        'u': 'ufat',
+        /*----- */
+        'á': 'atil',
+        'é': 'etil',
+        'í': 'itil',
+        'ó': 'otil',
+        'ú': 'util'
 
     };
     // Aplica las reglas de encriptación a cada carácter del texto
@@ -67,8 +73,13 @@ function decryptText(text) {
         'imes': 'i',
         'ai': 'a',
         'ober': 'o',
-        'ufat': 'u'
-
+        'ufat': 'u',
+        /*---*/ 
+        'atil': 'á',
+        'etil': 'é',
+        'itil': 'í',
+        'otil': 'ó',
+        'util': 'ú'
     };
 
     let decryptedText = text;
