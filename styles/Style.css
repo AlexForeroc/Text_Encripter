@@ -82,7 +82,7 @@ textarea {
     height: 620px; /* Altura del contenedor del texto */
     position: absolute; /* Posicionamiento absoluto dentro del contenedor */
     top: 80px; /* Posición desde el borde superior */
-    left: 700px; /* Posición desde el borde izquierdo */
+    left: 500px; /* Posición desde el borde izquierdo */
     border-radius: 32px; /* Bordes redondeados del contenedor */
     font-size: 20px; /* Tamaño de la fuente */
     border: 0; /* Sin borde */
