@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
 body {
     background-color: #F3F5FC; /* Color de fondo suave para el cuerpo */
     color: #333; /* Color de texto oscuro para mejorar la legibilidad */
