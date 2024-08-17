@@ -25,7 +25,7 @@ body {
     height: 55px; /* Altura del icono */
     position: absolute; /* Posiciona el icono de manera absoluta dentro del contenedor */
     top: 5px; /* Distancia desde el borde superior */
-    left: 40px; /* Distancia desde el borde izquierdo */
+    right: 40px; /* Distancia desde el borde izquierdo */
     border-radius: 32px; /* Bordes redondeados del icono */
 }
 
