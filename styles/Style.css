@@ -93,7 +93,7 @@ textarea {
     position: absolute; /* Posicionamiento absoluto del icono */
     width: 200px; /* Ancho de la imagen */
     height: 200px; /* Altura de la imagen */
-    left: 800px; /* Posición desde el borde izquierdo */
+    left: 600px; /* Posición desde el borde izquierdo */
     top: 230px; /* Posición desde el borde superior */
     margin-bottom: 100px; /* Espacio debajo de la imagen */
 }
@@ -108,7 +108,7 @@ textarea {
     font-size: 24px; /* Tamaño de la fuente */
     position: absolute; /* Posicionamiento absoluto */
     top: 68%; /* Posición desde el borde superior */
-    left: 112%; /* Posición desde el borde izquierdo */
+    left: 90%; /* Posición desde el borde izquierdo */
     transform: translate(-50%, -50%); /* Centra el mensaje en su posición */
     text-align: center; /* Alinea el texto al centro */
     width: 90%; /* Ancho del contenedor del mensaje */
@@ -122,7 +122,7 @@ textarea {
     font-size: 13px; /* Tamaño de la fuente */
     position: absolute; /* Posicionamiento absoluto */
     top: 75%; /* Posición desde el borde superior */
-    left: 112%; /* Posición desde el borde izquierdo */
+    left: 90%; /* Posición desde el borde izquierdo */
     transform: translate(-50%, -50%); /* Centra el mensaje en su posición */
     text-align: center; /* Alinea el texto al centro */
     width: 90%; /* Ancho del contenedor del mensaje */
