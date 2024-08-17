@@ -108,7 +108,7 @@ textarea {
     font-size: 24px; /* Tamaño de la fuente */
     position: absolute; /* Posicionamiento absoluto */
     top: 68%; /* Posición desde el borde superior */
-    left: 90%; /* Posición desde el borde izquierdo */
+    left: 85%; /* Posición desde el borde izquierdo */
     transform: translate(-50%, -50%); /* Centra el mensaje en su posición */
     text-align: center; /* Alinea el texto al centro */
     width: 90%; /* Ancho del contenedor del mensaje */
@@ -122,7 +122,7 @@ textarea {
     font-size: 13px; /* Tamaño de la fuente */
     position: absolute; /* Posicionamiento absoluto */
     top: 75%; /* Posición desde el borde superior */
-    left: 90%; /* Posición desde el borde izquierdo */
+    left: 85%; /* Posición desde el borde izquierdo */
     transform: translate(-50%, -50%); /* Centra el mensaje en su posición */
     text-align: center; /* Alinea el texto al centro */
     width: 90%; /* Ancho del contenedor del mensaje */
