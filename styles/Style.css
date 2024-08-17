@@ -178,7 +178,7 @@ button {
 #copiar_boton {
     position: absolute; /* Posicionamiento absoluto para el botón */
     top: 600px; /* Posición desde el borde superior */
-    left: 730px; /* Posición desde el borde izquierdo */
+    left: 530px; /* Posición desde el borde izquierdo */
     padding: 5px 10px; /* Espacio interno del botón */
     font-size: 14px; /* Tamaño de la fuente */
     background-color: #e7eaf6; /* Color de fondo del botón */
