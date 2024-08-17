@@ -253,7 +253,7 @@ textarea::-ms-input-placeholder {
         position: absolute; /* Posicionamiento absoluto */
         width: 150px; /* Ancho del contenedor del mensaje */
         height: 150px; /* Altura del contenedor del mensaje */
-        left: 180px; /* Distancia desde el borde izquierdo */
+        left: 40%; /* Distancia desde el borde izquierdo */
         top: 350px; /* Distancia desde el borde superior */
         margin-bottom: 10px; /* Espacio debajo del mensaje */
     }
@@ -263,7 +263,7 @@ textarea::-ms-input-placeholder {
         position: absolute; /* Posicionamiento absoluto */
         width: 150px; /* Ancho del contenedor del mensaje */
         height: 150px; /* Altura del contenedor del mensaje */
-        left: 180px; /* Distancia desde el borde izquierdo */
+        left: 40%; /* Distancia desde el borde izquierdo */
         top: 430px; /* Distancia desde el borde superior */
         margin-bottom: 10px; /* Espacio debajo del mensaje */
     }
@@ -274,7 +274,7 @@ textarea::-ms-input-placeholder {
         position: absolute; /* Posicionamiento absoluto del icono */
         width: 150px; /* Ancho del icono */
         height: 150px; /* Altura del icono */
-        left: 300px; /* Distancia desde el borde izquierdo */
+        left: 50%; /* Distancia desde el borde izquierdo */
         top: 320px; /* Distancia desde el borde superior */
         margin-bottom: 10px; /* Espacio debajo del icono */
     }
