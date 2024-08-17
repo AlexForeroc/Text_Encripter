@@ -53,6 +53,12 @@ function encryptText(text) {
         'a': 'ai',
         'o': 'ober',
         'u': 'ufat'
+        /*---------*/
+        'á': 'atil',
+        'é': 'etil',
+        'í': 'itil',
+        'ó': 'otil',
+        'ú': 'util'
     };
     // Aplica las reglas de encriptación a cada carácter del texto
     return text.toLowerCase().split('').map(char => rules[char] || char).join('');
@@ -67,6 +73,12 @@ function decryptText(text) {
         'ai': 'a',
         'ober': 'o',
         'ufat': 'u'
+        /*--------*/ 
+        'atil': 'á',
+        'etil': 'é',
+        'itil': 'í',
+        'otil': 'ó',
+        'util': 'ú'
     };
 
     let decryptedText = text;
