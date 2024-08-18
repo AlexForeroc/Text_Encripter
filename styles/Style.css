@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-    
+
 body {
     background-color: #F3F5FC; /* Color de fondo suave para el cuerpo */
     color: #333; /* Color de texto oscuro para mejorar la legibilidad */
@@ -25,7 +25,7 @@ body {
     height: 55px; /* Altura del icono */
     position: absolute; /* Posiciona el icono de manera absoluta dentro del contenedor */
     top: 5px; /* Distancia desde el borde superior */
-    right: 40px; /* Distancia desde el borde izquierdo */
+    right: 40px; /* Distancia desde el borde derecho */
     border-radius: 32px; /* Bordes redondeados del icono */
 }
 
@@ -67,13 +67,14 @@ textarea {
 
 /* Estilo para el contenedor del texto de ingreso */
 .ingresotexto {
-    width: 970px; /* Ancho del contenedor del texto */
+    width: 880px; /* Ancho del contenedor del texto */
     height: 500px; /* Altura del contenedor del texto */
     position: absolute; /* Posicionamiento absoluto dentro del contenedor */
     top: 80px; /* Posición desde el borde superior */
-    right: 120px; /* Posición desde el borde derecho */
+    right: 150px; /* Posición desde el borde derecho */
     border-radius: 32px; /* Bordes redondeados del contenedor */
     font-size: 20px; /* Tamaño de la fuente */
+  
 }
 
 /* Estilo para el contenedor del texto de salida */
@@ -82,7 +83,7 @@ textarea {
     height: 620px; /* Altura del contenedor del texto */
     position: absolute; /* Posicionamiento absoluto dentro del contenedor */
     top: 80px; /* Posición desde el borde superior */
-    left: 500px; /* Posición desde el borde izquierdo */
+    left: 670px; /* Posición desde el borde izquierdo */
     border-radius: 32px; /* Bordes redondeados del contenedor */
     font-size: 20px; /* Tamaño de la fuente */
     border: 0; /* Sin borde */
@@ -93,7 +94,7 @@ textarea {
     position: absolute; /* Posicionamiento absoluto del icono */
     width: 200px; /* Ancho de la imagen */
     height: 200px; /* Altura de la imagen */
-    left: 600px; /* Posición desde el borde izquierdo */
+    left: 750px; /* Posición desde el borde izquierdo */
     top: 230px; /* Posición desde el borde superior */
     margin-bottom: 100px; /* Espacio debajo de la imagen */
 }
@@ -108,7 +109,7 @@ textarea {
     font-size: 24px; /* Tamaño de la fuente */
     position: absolute; /* Posicionamiento absoluto */
     top: 68%; /* Posición desde el borde superior */
-    left: 88%; /* Posición desde el borde izquierdo */
+    left: 108%; /* Posición desde el borde izquierdo */
     transform: translate(-50%, -50%); /* Centra el mensaje en su posición */
     text-align: center; /* Alinea el texto al centro */
     width: 90%; /* Ancho del contenedor del mensaje */
@@ -122,7 +123,7 @@ textarea {
     font-size: 13px; /* Tamaño de la fuente */
     position: absolute; /* Posicionamiento absoluto */
     top: 75%; /* Posición desde el borde superior */
-    left: 88%; /* Posición desde el borde izquierdo */
+    left: 108%; /* Posición desde el borde izquierdo */
     transform: translate(-50%, -50%); /* Centra el mensaje en su posición */
     text-align: center; /* Alinea el texto al centro */
     width: 90%; /* Ancho del contenedor del mensaje */
@@ -178,7 +179,7 @@ button {
 #copiar_boton {
     position: absolute; /* Posicionamiento absoluto para el botón */
     top: 600px; /* Posición desde el borde superior */
-    left: 530px; /* Posición desde el borde izquierdo */
+    left: 700px; /* Posición desde el borde izquierdo */
     padding: 5px 10px; /* Espacio interno del botón */
     font-size: 14px; /* Tamaño de la fuente */
     background-color: #e7eaf6; /* Color de fondo del botón */
@@ -208,9 +209,7 @@ textarea:-moz-placeholder {
 textarea::-ms-input-placeholder {
     font-size: 20px; /* Tamaño de la fuente para los placeholders en Edge */
 }
-/*---------------------------------*/
 
-/*-------------------------------*/
 
 /* Media Query para dispositivos con un ancho máximo de 680px (tablet) */
 @media (max-width: 900px) {
@@ -253,7 +252,9 @@ textarea::-ms-input-placeholder {
         position: absolute; /* Posicionamiento absoluto */
         width: 150px; /* Ancho del contenedor del mensaje */
         height: 150px; /* Altura del contenedor del mensaje */
-        left: 40%; /* Distancia desde el borde izquierdo */
+        left: 40%
+        
+        ; /* Distancia desde el borde izquierdo */
         top: 350px; /* Distancia desde el borde superior */
         margin-bottom: 10px; /* Espacio debajo del mensaje */
     }
@@ -274,7 +275,7 @@ textarea::-ms-input-placeholder {
         position: absolute; /* Posicionamiento absoluto del icono */
         width: 150px; /* Ancho del icono */
         height: 150px; /* Altura del icono */
-        left: 50%; /* Distancia desde el borde izquierdo */
+        left:50%; /* Distancia desde el borde izquierdo */
         top: 320px; /* Distancia desde el borde superior */
         margin-bottom: 10px; /* Espacio debajo del icono */
     }
@@ -283,7 +284,8 @@ textarea::-ms-input-placeholder {
     .textareas {
         display: flex; /* Utiliza flexbox para alinear los textareas */
         justify-content: space-between; /* Espacio igual entre los textareas */
-        margin: 10px 0; /* Margen superior e inferior */  
+        margin: 10px 0; /* Margen superior e inferior */
+        
     }
     
     /* Estilo para los elementos textarea en movil */
@@ -347,15 +349,16 @@ textarea::-ms-input-placeholder {
     #copiar_boton {
         background-color: #e7eaf6; /* Color de fondo del botón */
         border: 2px solid #0A3871; /* Color y grosor del borde del botón */
-        width: 280px; /* Ancho del botón */
+        width:48%; /* Ancho del botón */
         padding: 7px; /* Espacio interno del botón */
         left: 350px; /* Posición desde el borde izquierdo */
         top: 500px; /* Posición desde el borde superior */
         height: 148px; /*Alto del boton*/
     }
+
+
 }
 
-/*-------------------------------*/
 
 /* Media Query para dispositivos con un ancho máximo de 680px (movil) */
 @media (max-width: 680px) {
@@ -499,7 +502,7 @@ textarea::-ms-input-placeholder {
     
     /* Estilo general para los botones en tabletas */
     button {
-        width: 200px; /* Ancho del botón */
+        width: 40%; /* Ancho del botón*/
         height: 67px; /* Altura del botón */
         padding: 10px; /* Espacio interno del botón */
         font-size: 16px; /* Tamaño de la fuente */
@@ -615,9 +618,9 @@ textarea::-ms-input-placeholder {
     #copiar_boton {
         background-color: #e7eaf6; /* Color de fondo del botón */
         border: 2px solid #0A3871; /* Color y grosor del borde del botón */
-        width: 100px; /* Ancho del botón */
+        width: 20%; /* Ancho del botón */
         padding: 7px; /* Espacio interno del botón */
-        left: 230px; /* Posición desde el borde izquierdo */
+        left: 280px; /* Posición desde el borde izquierdo */
         top: 500px; /* Posición desde el borde superior */
         height: 150px; /*Alto del boton*/
     }
