@@ -620,7 +620,7 @@ textarea::-ms-input-placeholder {
         border: 2px solid #0A3871; /* Color y grosor del borde del botón */
         width: 30%; /* Ancho del botón */
         padding: 7px; /* Espacio interno del botón */
-        left: 250px; /* Posición desde el borde izquierdo */
+        left: 45%; /* Posición desde el borde izquierdo */
         top: 500px; /* Posición desde el borde superior */
         height: 150px; /*Alto del boton*/
     }
