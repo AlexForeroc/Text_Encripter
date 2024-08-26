@@ -94,7 +94,7 @@ textarea {
     position: absolute; /* Posicionamiento absoluto del icono */
     width: 200px; /* Ancho de la imagen */
     height: 200px; /* Altura de la imagen */
-    left: 750px; /* Posición desde el borde izquierdo */
+    left: 770px; /* Posición desde el borde izquierdo */
     top: 230px; /* Posición desde el borde superior */
     margin-bottom: 100px; /* Espacio debajo de la imagen */
 }
