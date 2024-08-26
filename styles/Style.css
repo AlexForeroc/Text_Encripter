@@ -606,7 +606,7 @@ textarea::-ms-input-placeholder {
     /* Ajusta el tamaño y posición del icono 'chico_lupa' */
     .chico_lupa {
         width: 180px; /* Ancho del icono */
-        left: 130px; /* Posición desde el borde izquierdo */
+        left: 150px; /* Posición desde el borde izquierdo */
         top: 290px; /* Posición desde el borde superior */
     }
     
