@@ -1,22 +1,41 @@
-*{
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo global para el body con animación de fondo */
 body {
-    background-color: #F3F5FC; /* Color de fondo suave para el cuerpo */
-    color: #333; /* Color de texto oscuro para mejorar la legibilidad */
-    font-family: Arial, sans-serif; /* Fuente predeterminada para el texto */
-    margin: 0; /* Elimina el margen por defecto */
-    padding: 20px; /* Agrega espacio interno alrededor del contenido */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #23395d, #203354, #1c2e4a, #192841, #152238); /* Degradado inicial */
+    background-size: 600% 600%; /* Escalado del fondo para la animación */
+    animation: cambiar-fondo 10s ease infinite; /* Aplica la animación al fondo */
 }
 
-/* Estilo para el contenedor principal */
+/* Definición de la animación para cambiar el degradado de fondo */
+@keyframes cambiar-fondo {
+    0% {
+        background-position: 0% 50%;
+    }
+    33% {
+        background-position: 100% 50%;
+    }
+    66% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 300% 50%;
+    }
+}
+
+/* Estilos del contenedor principal */
 .contenedor {
-    max-width: 800px; /* Ancho máximo del contenedor para mantener el diseño centrado */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    position: relative; /* Permite el posicionamiento absoluto de los elementos hijos */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
 }
 
 /* Estilo para los iconos */
