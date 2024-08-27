@@ -41,11 +41,11 @@ body {
 
 /* Estilo para los iconos */
 .icon {
-    width: 2000px; /* Ancho del icono (revisar si es necesario) */
+    width: 62px; /* Ancho del icono (revisar si es necesario) */
     height: 55px; /* Altura del icono */
     position: absolute; /* Posiciona el icono de manera absoluta dentro del contenedor */
     top: 5px; /* Distancia desde el borde superior */
-    right: 40px; /* Distancia desde el borde derecho */
+    left: -230px; /* Distancia desde el borde derecho */
     border-radius: 32px; /* Bordes redondeados del icono */
 }
 
@@ -349,11 +349,11 @@ textarea::-ms-input-placeholder {
 
     /* Estilo para los iconos en tablet */
     .icon {
-        width: 200px; /* Ancho del icono */
+        width: 60px; /* Ancho del icono */
         height: 55px; /* Altura del icono */
         position: absolute; /* Posicionamiento absoluto del icono */
         top: 5px; /* Distancia desde el borde superior */
-        left: 5px; /* Distancia desde el borde izquierdo */
+        left: 25px; /* Distancia desde el borde izquierdo */
         border-radius: 32px; /* Bordes redondeados */
     }
 
@@ -594,7 +594,7 @@ textarea::-ms-input-placeholder {
     /* Estilo para los iconos en movil */
     .icon {
         width: 200px; /* Ancho del icono */
-        height: 55px; /* Altura del icono */
+        height: 5px; /* Altura del icono */
         position: absolute; /* Posicionamiento absoluto del icono */
         top: 5px; /* Distancia desde el borde superior */
         left: 5px; /* Distancia desde el borde izquierdo */
@@ -791,7 +791,7 @@ textarea::-ms-input-placeholder {
     /* Ajusta el tamaño y posición del icono en tabletas */
     .icon {
         position: static; /* Cambia a posición estática para el nuevo diseño */
-        width: 20px; /* Ancho del icono */
+        width: 40px; /* Ancho del icono */
         height: auto; /* Altura automática */
         margin-bottom: 10px; /* Espacio debajo del icono */
     }
